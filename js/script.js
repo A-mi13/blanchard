@@ -78,7 +78,7 @@ const project__swiper = new Swiper('.project__swiper', {
   slidesPerView: 3,
   spaceBetween: 50,
   slidesPerGroup: 3,
-  loop: true,
+  loop: false,
   loopFillGroupWithBlank: true,
   navigation: {
     nextEl: ".swiper-button-next1",
@@ -113,10 +113,11 @@ const developments__swiper = new Swiper('.developments__swiper', {
   spaceBetween: 50,
   slidesPerGroup: 1,
   fadeSpeed: 300,  
-  loop: true,
+  loop: false,
   loopFillGroupWithBlank: true,
   navigation: {
     nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
   },
   pagination: {
     el: '.swiper-pag',
