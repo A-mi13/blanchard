@@ -24,6 +24,12 @@ menuLinks.forEach(function (el) {
     });
 })
 
+$(function(){
+  $(".dropdown").on("show.bs.dropdown hide.bs.dropdown", function(){
+    $(this).find(".dropdown-toggle").toggleClass("dropdown-toggle--active");
+  });
+});
+
 const hero__swiper = new Swiper('.hero__swiper', {
   slidesPerView: 1,
   slidesPerGroup: 1,
