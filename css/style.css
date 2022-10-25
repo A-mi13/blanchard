@@ -713,6 +713,7 @@ rect {
   width: 2px;
   max-height: 220px;
   top: 40px;
+  right: 5%;
   background: #000;
 }
 
