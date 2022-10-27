@@ -358,7 +358,7 @@ rect {
 }
 
 .header__form-close:focus {
-  outline: 2px solid var(--purple-dark)!important;
+  outline: 2px solid var(--purple-dark) !important;
   outline-offset: 3px;
 }
 
@@ -606,14 +606,17 @@ rect {
 }
 
 .btn-group:focus {
+  outline: none !important;
   background-color: var(--purple-dark);
 }
 
 .btn-group:hover {
+  outline: none !important;
   color: var(--purple-medium);
 }
 
 .btn-group:active {
+  outline: none !important;
   color: var(--font-color-white);
   background-color: var(--purple-dark);
 }
@@ -1779,7 +1782,7 @@ rect {
   border-bottom: 1px solid var(--purple-light);
 }
 
-.ui-state-hover .accordion-icon, 
+.ui-state-hover .accordion-icon,
 .ui-state-focus .accordion-icon {
   -webkit-transition-property: color, transform, background-color;
   transition-property: color, transform, background-color;
@@ -1931,7 +1934,8 @@ rect {
 }
 
 .catalog__link:active {
-  background-color: var(--font-color-white);;
+  background-color: var(--font-color-white);
+  ;
   color: var(--font-color-grey);
   text-decoration: underline;
 }
@@ -2090,6 +2094,7 @@ rect {
   outline: none;
   border: 2px solid var(--font-color-btn);
 }
+
 .swiper-button-prev2:hover {
   background: var(--purple-light);
   border: 2px solid var(--purple-light);
@@ -2857,6 +2862,9 @@ rect {
   }
 
   .nav__menu-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     visibility: visible;
     -webkit-transform: none;
     -ms-transform: none;
@@ -2888,8 +2896,8 @@ rect {
   }
 
   .header__list-button {
-    position: absolute;
-    bottom: 50px;
+    width: fit-content;
+    margin-top: auto;
     padding: 20px 108px;
     border: 2px solid var(--font-color-btn);
     border-radius: 100px;
@@ -3360,7 +3368,8 @@ rect {
     margin-bottom: 40px;
   }
 
-  .choices__list--dropdown, .choices__list[aria-expanded] {
+  .choices__list--dropdown,
+  .choices__list[aria-expanded] {
     background-color: #000;
   }
 
@@ -3410,7 +3419,7 @@ rect {
   }
 
   .catalog__content-list {
-    width: 95vw;
+    width: 90vw;
     max-width: 95vw;
     max-height: 370px;
   }
@@ -3511,6 +3520,12 @@ rect {
   .form {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+
+  .just-validate-error-label {
+    -webkit-transform: translateY(-85px);
+    -ms-transform: translateY(-85px);
+    transform: translateY(-85px);
   }
 
   /*contacts*/
@@ -3727,7 +3742,8 @@ rect {
     margin-bottom: 30px;
   }
 
-  .choices__list--dropdown, .choices__list[aria-expanded] {
+  .choices__list--dropdown,
+  .choices__list[aria-expanded] {
     background-color: #000;
   }
 

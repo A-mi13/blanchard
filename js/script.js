@@ -76,6 +76,7 @@ const gallery__swiper = new Swiper('.gallery__swiper', {
     1440: {
       slidesPerView: 3,
       slidesPerGroup: 3,
+      
       spaceBetween: 50
     }
   },
