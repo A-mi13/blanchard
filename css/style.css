@@ -1410,8 +1410,6 @@ rect {
   background-color: rgba(194, 131, 243, 0.4);
 }
 
-.
-
 .gallery__swiper-slide:hover::before {
   opacity: 1;
 }
